@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/static/CSS/CSS sheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sent</title>
+</head>
+
+<body>
+    <div class="body1">
+        {% if messages %}
+        <ul class="messages cualert">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                <li> <a href="/"> Click here to return back to Home </a> </li>
+                {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</body>
+
+</html>

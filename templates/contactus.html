@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/CSS/CSS sheet.css?{% now "U" %}">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <section>
+        <p id="head">e-Bandhu <span class="subscript">—Your true e-Friend</span></p>
+    </section>
+    <nav class="navbar">
+        <ul class="navlist">
+            <li class="navitem"> <a href="/"><img src="/static/Images/icon/home.png" alt="Home logo" class="homeicon">
+                    &#8203 &#8203
+                    Home</li>
+            </a>
+            <a href="/tm">
+                <li class="navitem navoptions"> <img src="/static/Images/icon/fakenews.png" alt="" class="icon"
+                        id="icnti"> Trending &#8203; Misinformation</li>
+            </a>
+            <a href="/lu">
+                <li class="navitem navoptions"> <img src="/static/Images/icon/update.png" alt="" class="icon"
+                        id="icnupdate"> Latest &#8203; Updates</li>
+            </a>
+            <a href="/qc">
+                <li class="navitem navoptions"> <img src="/static/Images/icon/assesdevice.png" alt="" class="icon">
+                    Quick
+                    Check </li>
+            </a>
+            <a href="/eg">
+                <li class="navitem navoptions"> <img src="/static/Images/icon/learn.png" alt="" class="icon"
+                        id="icnlearn"> eSafety Guru</li>
+            </a>
+            <a href="/cu">
+                <li class="navitem navoptions" id="navright"> <img src="/static/Images/icon/contactus.jpg" alt=""
+                        class="icon" id="icncontactus"> Contact Us</li>
+            </a>
+        </ul>
+    </nav>
+    <section class="body1 cucontent">
+        <div class="desccu">
+            <p class="heading">Contact Us</p>
+            <hr id="cuhrhead" class="hrhead">
+            {% if messages %}
+            <ul class="messages cualert">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                    <li> <a href="/"> Click here to return back to Home </a> </li>
+                    {% endfor %}
+            </ul>
+            {% endif %}
+            <p class="content" id="lastlinedesccu">Feel Free to contact us in case you face any difficulty using this
+                web app. We also encourage you to share your valuable feedback with us.</p>
+        </div>
+        <div class="formcu">
+            <p class="content">Please fill up the following details-</p>
+            <form action="/cu" method="POST">
+                {% csrf_token %}
+                <div class="formcudiv">
+                    <label for="name">Name-</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name here" required
+                        autocomplete="name">
+                </div>
+                <div class="formcudiv">
+                    <label for="name">Email address-</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email id here"
+                        autocomplete="email" required max>
+                </div>
+                <div class="formcudiv">
+                    <label for="name">Phone Number (optional)-</label>
+                    <input type="phone" name="phone" id="phone" placeholder="Enter your phone number here" value="+91 " maxlength="14">
+                </div>
+                <div class="formcudiv">
+                    <label for="name">Complaint/ Feedback-</label>
+                    <textarea id="desc" rows="3" name="desc" placeholder="Start here" required></textarea>
+                </div>
+                <button type="submit" class="formcubtn"> Submit </button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footrow1 footrow">
+            <a href="/">
+                <p>
+                    Home
+                </p>
+            </a>
+            <a href="/tm">
+                <p>
+                    Trending Misinformation
+                </p>
+            </a>
+        </div>
+        <div class="footrow1 footrow">
+            <a href="/lu">
+                <p>
+                    Latest Updates
+                </p>
+            </a>
+            <a href="/qc">
+                <p>
+                    Quick Check
+                </p>
+            </a>
+        </div>
+        <div class="footrow2 footrow">
+            <a href="/eg">
+                <p>
+                    eSafety Guru
+                </p>
+            </a>
+            <a href="/cu">
+                <p>
+                    Contact Us
+                </p>
+            </a>
+        </div>
+    </footer>
+    <p class="credits">Credits- All images used in this page are taken from <u> <a href="https://pixabay.com/"
+                target="_blank">Pixabay</a></u>.</p>
+</body>
+
+</html>

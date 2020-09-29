@@ -1,0 +1,1019 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Recursive", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(78, 236, 236, 0.815);
+}
+
+button {
+  outline: none;
+}
+
+/* css of heading */
+
+#head {
+  margin-top: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.subscript {
+  font-size: 1.7rem;
+  font-style: italic;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* CSS of Navbar starts here */
+
+.hrhead {
+  border: 0.2rem inset rgba(78, 236, 236, 0.815);
+  margin: auto;
+  margin-top: 0;
+}
+
+#tmhrhead {
+  width: 23.5rem;
+}
+
+#luhrhead {
+  width: 14rem;
+  margin-bottom: 1rem;
+}
+
+#qchrhead {
+  width: 11rem;
+  margin-bottom: 0.5rem;
+}
+
+#eghrhead {
+  width: 12rem;
+}
+
+#cuhrhead {
+  width: 9.5rem;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+  font-family: "Merriweather", serif;
+  width: 100%;
+  height: 12vh;
+  z-index: -2;
+}
+
+#logo1 {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 3rem;
+  border: 0.2rem solid white;
+  margin-top: 0.7rem;
+}
+
+.navlist {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.navlist li {
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  height: 1.5rem;
+  margin: auto;
+}
+
+.navlist a:hover {
+  letter-spacing: 0.1rem;
+}
+
+.navoptions {
+  border-left: 0.2rem solid rgb(173, 173, 173);
+}
+
+.navlist a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.homeicon {
+  height: 1.25rem;
+  filter: invert(100%);
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0;
+  margin: 0;
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+#icnlearn {
+  width: 2rem;
+  height: 2rem;
+  filter: invert(100%);
+}
+
+#icncontactus {
+  filter: invert(0%);
+  width: 1.75rem;
+  height: 1.4rem;
+}
+
+#icnreport {
+  width: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.graph {
+  height: 15rem;
+  margin: 0 .5rem;
+  width: 32rem;
+}
+
+#figcap1 {
+  border-bottom: .15rem solid black;
+  padding-bottom: .2rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding: .5rem 0;
+  padding-bottom: 0;
+}
+
+#fig2 {
+  margin-top: .7rem;
+}
+
+#lunoborder {
+  border: none;
+}
+
+.headinglu {
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.luul {
+  font-size: 1.5rem;
+  border-bottom: 0.2rem solid black;
+}
+
+.luul li {
+  margin-left: 2rem;
+  font-family: "Baloo Tamma 2", cursive;
+  list-style: square;
+}
+
+.datarep {
+  padding: 0rem;
+}
+
+.datarep figcaption {
+  text-align: center;
+  font-family: "PT Serif Caption", serif;
+  font-style: oblique;
+  margin-left: 0.5rem;
+  padding: 0;
+  padding-top: .5rem;
+}
+
+/* Navbar CSS ends here */
+
+.tmh {
+  font-size: 2rem;
+  padding: 0;
+  line-height: 2.3rem;
+  font-family: "Recursive", sans-serif;
+}
+
+.covidnews {
+  color: red;
+}
+
+.bigimg {
+  display: flex;
+}
+
+.bigimgin {
+  width: 47vw;
+  height: 60vh;
+  margin: 0 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 5rem;
+  border: 0.4rem double black;
+}
+
+.name {
+  font-size: 3.5rem;
+  background-color: rgb(185, 185, 185);
+  margin: 2rem;
+  color: rgb(0, 38, 255);
+  border-radius: 3.5rem;
+  width: 50vw;
+  height: 54vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#name1 {
+  font-size: 2.5rem;
+  padding-right: 0;
+  padding-left: 5rem;
+  color: #08ffb5;
+}
+
+/* CSS for slider starts here */
+
+.slider {
+  margin: 0 auto;
+  margin-top: 1rem;
+  position: relative;
+  width: 60rem;
+  background: url("/static/Images/slider/slide1.JPG");
+  background-size: 60rem 25rem;
+  border: 0.8rem inset black;
+  background-size: 100% 100%;
+  height: 25rem;
+  padding-bottom: none;
+  animation: 45s slidera infinite linear;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+@keyframes slidera {
+  0% {
+    background: url("/static/Images/slider/slide1.JPG");
+    background-size: 60rem 25rem;
+  }
+  15% {
+    background: url("/static/Images/slider/slide1.JPG");
+    background-size: 60rem 25rem;
+  }
+  20% {
+    background: url("/static/Images/slider/slide2.JPG");
+    background-size: 60rem 25rem;
+  }
+  35% {
+    border: 0.8rem inset white;
+    background: url("/static/Images/slider/slide2.JPG");
+    background-size: 60rem 25rem;
+  }
+  40% {
+    background: url("/static/Images/slider/slide3.JPG");
+    background-size: 60rem 25rem;
+  }
+  55% {
+    background: url("/static/Images/slider/slide3.JPG");
+    background-size: 60rem 25rem;
+  }
+  60% {
+    background: url("/static/Images/slider/slide4.JPG");
+    background-size: 60rem 25rem;
+  }
+  75% {
+    border: 0.8rem inset black;
+    background: url("/static/Images/slider/slide4.JPG");
+    background-size: 60rem 25rem;
+  }
+  80% {
+    background: url("/static/Images/slider/slide5.JPG");
+    background-size: 60rem 25rem;
+  }
+  95% {
+    background: url("/static/Images/slider/slide5.JPG");
+    background-size: 60rem 25rem;
+  }
+  100% {
+    background: url("/static/Images/slider/slide1.JPG");
+    background-size: 60rem 25rem;
+  }
+}
+
+.sldimg {
+  width: 80rem;
+  height: 100%;
+}
+
+.heading {
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+  margin-bottom: 0.2;
+  font-size: 2.5rem;
+}
+
+.about {
+  margin: 1rem 3rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.945);
+}
+
+.bighead {
+  font-size: 3rem;
+  text-decoration: underline;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.bigheadtb {
+  font-size: 2.6rem;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.hometable {
+  padding: 0 1rem;
+  border: 0.2rem solid black;
+  margin: 0.4rem 1rem;
+  width: 49%;
+  height: 100%;
+}
+
+.hometable td {
+  margin: 0.5rem;
+  text-align: justify;
+}
+
+.hmtblbtn {
+  font-size: 1.35rem;
+  width: 10rem;
+  height: 3rem;
+  margin-left: 12rem;
+  display: block;
+  background-color: black;
+  border-radius: 2rem;
+  border: 0.2rem solid rgba(141, 139, 139, 0.707);
+  margin-top: 0.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.hometbincnta {
+  text-decoration: none;
+}
+
+.hmtblbtn:hover {
+  background: none;
+  border: 0.2rem outset black;
+  color: black;
+}
+
+.nolinespace2 {
+  line-height: 2rem;
+  font-size: 1.9rem;
+}
+
+.nolinespace {
+  line-height: 1.7rem;
+}
+
+.midhead {
+  font-size: 2rem;
+  font-family: "Baloo Bhaina 2", cursive;
+  padding: 0;
+  line-height: 2.3rem;
+}
+
+.lli {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.llib {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  margin-left: 0;
+}
+
+.llibnote {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.llib li {
+  margin-left: 2rem;
+}
+
+#paraspara1 {
+  margin-bottom: .2rem;
+}
+
+.paras p {
+  font-size: 1.7rem;
+}
+
+.content {
+  font-family: "Baloo Tamma 2", cursive;
+  font-size: 1.5rem;
+}
+
+.cnt {
+  margin: 0rem;
+  margin-top: .5rem;
+  border-bottom: 0.2rem solid rgb(90, 90, 90);
+  margin-right: 0;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.nomargin {
+  margin: 0;
+}
+
+.cnt p {
+  padding: 0 1rem;
+}
+
+.body1 {
+  background-color: white;
+  margin: 1rem 0.8rem;
+  padding: 0.2rem;
+}
+
+.contentimgr {
+  border-radius: 2rem;
+  margin-bottom: 2.5rem;
+  margin-right: 2rem;
+  height: 20rem;
+  width: 20rem;
+  border: 0.2rem solid rgb(90, 90, 90);
+}
+
+.contentimgl {
+  border: 0.2rem ridge rgb(90, 90, 90);
+  border-radius: 2rem;
+  margin-bottom: 2.5rem;
+  margin-left: 2rem;
+  height: 20rem;
+  width: 20rem;
+}
+
+.sec {
+  display: flex;
+}
+
+.learnincont {
+  margin: 0 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.learnincont li {
+  margin-left: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.learncontent {
+  margin-left: 0.5rem;
+}
+
+.learncontent h3 {
+  border-top: 0.2rem solid black;
+  padding-top: 0.5rem;
+}
+
+#topllib {
+  border: none;
+}
+
+/* CSS of Features starts here */
+
+.bigidea {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.smallidea {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.ideatext {
+  margin: 1rem 2rem;
+  background-color: black;
+  color: white;
+  border: 0.65rem inset rgba(161, 255, 255, 0.815);
+  margin: 0.5rem;
+  width: 25rem;
+  height: 20rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ideacnt {
+  display: flex;
+  margin: auto;
+}
+
+#tmidea {
+  background: rgba(0, 0, 0, 0.7) url("/static/Images/features/tm.jpg");
+  background-size: 100% 100%;
+  background-blend-mode: darken;
+  margin-right: 5rem;
+}
+
+#luidea {
+  background: rgba(0, 0, 0, 0.7) url("/static/Images/features/lu.jpg");
+  background-size: 100% 100%;
+  background-blend-mode: darken;
+}
+
+#aydidea {
+  background: url("/static/Images/features/ayd.jpg") rgba(14, 0, 0, 0.7);
+  background-size: 100% 100%;
+  background-blend-mode: darken;
+  margin-right: 5rem;
+}
+
+#learnidea {
+  background: url("/static/Images/features/guru.jpg") rgba(14, 0, 0, 0.7);
+  background-size: 100% 100%;
+  background-blend-mode: darken;
+}
+
+#reportidea {
+  background: url("https://cdn.pixabay.com/photo/2016/03/31/18/25/flag-1294348__340.png") rgba(0, 0, 0, 0.7);
+  background-size: 100% 100%;
+  background-blend-mode: darken;
+}
+
+.ideabtn {
+  width: 10rem;
+  height: 2.5rem;
+  margin: 0.3rem 1rem;
+  background: none;
+  color: white;
+  font-size: 1.35rem;
+  padding: 0.1rem;
+  margin: auto;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.ideabtna {
+  border: 0.1rem solid white;
+  border-radius: 5rem;
+  width: 12rem;
+  height: 3.5rem;
+  width: 10rem;
+  height: 2.5rem;
+  margin: 0.3rem 1rem;
+  background: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.1rem;
+  margin: auto;
+}
+
+.ideabtna:hover {
+  background-color: white;
+  cursor: pointer;
+  border: 0.3rem outset rgba(78, 236, 236, 0.815);
+}
+
+.ideabtn:hover {
+  color: black;
+}
+
+.ideahash {
+  text-align: right;
+  font-size: 1.2rem;
+  font-family: 'Stoke', serif;
+  color: white;
+}
+
+/* CSS of features ends here */
+
+/* CSS of quiz starts here */
+
+.bodyquiz {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer2 {
+  justify-content: flex-end;
+}
+
+.option {
+  padding: 0.2rem;
+}
+
+.options {
+  margin: 0.5rem 0;
+}
+
+.options p {
+  margin: 0.4rem 0;
+}
+
+.submitbtn {
+  margin: 3rem 0rem;
+}
+
+#starting {
+  text-align: center;
+}
+
+#quizstart {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+  width: 20rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.ayd button {
+  outline: none;
+}
+
+.submitbtn button {
+  font-family: "Baloo Tamma 2", cursive;
+  height: 2.5rem;
+  width: 6rem;
+  padding: 0 0.3rem;
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  margin-left: 77rem;
+  margin-bottom: 0;
+}
+
+.submitbtn button:hover {
+  background-color: white;
+  border: 0.2rem solid black;
+  color: black;
+  cursor: pointer;
+}
+
+.quizli {
+  margin: 2rem;
+}
+
+.nextbtn {
+  font-family: "Baloo Tamma 2", cursive;
+  height: 2.2rem;
+  width: 5rem;
+  padding: auto 0.1rem;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 77rem;
+  margin-bottom: 1rem;
+}
+
+.nextbtn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.resulthead {
+  font-size: 1.75rem;
+  text-emphasis: bold;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.resultli {
+  margin-top: 0.25rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+  margin-left: 1rem;
+}
+
+.resultlil {
+  margin-bottom: 0.5rem;
+}
+
+.resultlia {
+  color: black;
+}
+
+.quizmidhead {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.quizhr1 {
+  margin: 1rem 0;
+}
+
+.aydlink {
+  color: grey;
+}
+
+/* CSS of quiz ends here */
+
+.note {
+  font-size: 0.8rem;
+  color: black;
+  text-decoration: none;
+  text-emphasis: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.newssource {
+  text-decoration: none, underline;
+  color: black;
+  margin: 0.2rem;
+  font-size: 1.1rem;
+  border-bottom: none;
+}
+
+.twobox {
+  display: flex;
+  text-align: center;
+}
+
+.rightborder {
+  border-right: 0.25rem solid black;
+}
+
+.leftborder {
+  border-left: 0.2rem solid black;
+}
+
+.norightmargin {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.norightmargin p {
+  margin-left: 0.5rem;
+  text-align: center;
+}
+
+.midbox {
+  width: 50%;
+  margin: auto;
+  border-left: 0.2rem solid black;
+  border-right: 0.2rem solid black;
+  margin-top: 0;
+}
+
+.nomarginbottom {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.learnol {
+  margin-left: 2.5rem;
+}
+
+.learnreporta {
+  text-decoration: underline;
+  color: rgb(61, 61, 61);
+}
+
+.learnula {
+  text-decoration: none;
+  color: black;
+}
+
+.learnula:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.creditscont {
+  display: flex;
+  margin: auto auto;
+}
+
+.creditsa:hover {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-color: rgb(53, 52, 52);
+}
+
+.creditscont p {
+  margin: auto auto;
+}
+
+.collapseup {
+  margin: 1rem auto;
+  width: 99.5%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  background-color: rgb(19, 19, 19);
+  text-align: left;
+  color: #ffffff;
+}
+
+.squareul li {
+  list-style-type: square;
+}
+
+/* CSS of Contact Us starts here */
+
+.cucontent {
+  padding-left: 1rem;
+}
+
+#lastlinedesccu {
+  border-bottom: 0.2rem double black;
+  padding-bottom: 1rem;
+}
+
+.formcu {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.formcu input {
+  width: 80%;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin: auto;
+  outline: none;
+  border: 0.2rem inset rgba(0, 255, 255, 0.815);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.formcu textarea {
+  margin: auto;
+  border: 0.2rem inset rgba(0, 255, 255, 0.815);
+  outline: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 80%;
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.formcudiv {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+}
+
+.formcudiv label {
+  margin-left: 10%;
+}
+
+.formcubtn {
+  margin-left: 11%;
+  cursor: pointer;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  width: 8rem;
+  padding: inherit;
+  color: white;
+  border: 0.2rem outset rgb(55, 54, 54);
+  background-color: rgb(121, 121, 121);
+  margin-bottom: 1rem;
+}
+
+.formcubtn:hover {
+  border: 0.3rem outset rgba(0, 255, 255, 0.815);
+  color: rgba(0, 255, 255, 0.815);
+  background-color: rgb(65, 65, 65);
+}
+
+.cualert {
+  list-style: none;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  width: 60%;
+  text-align: center;
+  margin: 1rem auto;
+  border: 0.5rem outset rgba(0, 255, 255, 0.815);
+  color: rgba(0, 255, 255, 0.815);
+  background-color: rgb(65, 65, 65);
+}
+
+.cualert a {
+  color: rgba(0, 255, 255, 0.815);
+  text-decoration: underline;
+}
+
+/* CSS of footer starts here */
+
+.footer {
+  background-color: rgb(53, 52, 52);
+  display: flex;
+  width: 81.3437461rem;
+  padding: 1rem 1.5rem;
+}
+
+footer a:hover {
+  color: rgb(175, 175, 175);
+  border-bottom: .2rem solid rgb(175, 175, 175);
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+  border-bottom: .2rem solid white;
+}
+
+.footrow {
+  margin: 0 4.5rem;
+  display: flex;
+  text-align: center;
+  width: 26.8434362rem;
+  flex-direction: column;
+}
+
+.footrow p {
+  padding: .5rem;
+  font-size: 1.2rem;
+}
+
+.credits {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-color: rgb(53, 52, 52);
+}
+
+.credits p {
+  text-align: center;
+}
+
+.credits u {
+  text-align: center;
+}
+
+.credits a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.credits a:hover {
+  color: rgb(83, 83, 83);
+  background-color: rgb(255, 255, 255);
+}
+
+.footerquiz {
+  background-color: rgb(53, 52, 52);
+  display: flex;
+  padding: 1rem 1.5rem;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.creditsquiz {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-color: rgb(53, 52, 52);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.creditsa:hover {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-color: rgb(53, 52, 52);
+}
+
+.creditsacont {
+  padding-top: 1rem;
+}
