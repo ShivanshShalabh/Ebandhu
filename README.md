@@ -1,3 +1,4 @@
+# This is an entry to the 2020 eRaksha Competition 
 # Requirements 
 * Django must be installed.
 * To install Django write 'pip install django'.
